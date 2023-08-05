@@ -1,6 +1,5 @@
 function clickOne() {
     document.getElementById("one").click()
-//      document.getElementById("displayed").click;
 }
 
 function separateNumbersAndOperators(string) {
@@ -8,18 +7,15 @@ function separateNumbersAndOperators(string) {
     let numbers = [];
     let operations = [];
     let currentString = "";
-    //console.log("The calculate function was called");
     for (let i = 0; i < string.length; i++) {
         if (operator.includes(string[i])) {
             if (currentString != "") {
                 numbers.push(currentString);
-                //console.log(currentString + "was recognized");
                 currentString = "";
             }
             operations.push(string[i]);
         } else {
             currentString += string[i];
-        //    console.log("")
         }
     }
     numbers.push(currentString);
@@ -63,7 +59,7 @@ function processAddAndSub(numbers, operations) {
 
     while (counter < operations.length) {
         if (operations[counter] == "+") {
-            newNumbers.push(numbers[counter] + numbers[counter + 1]);
+            newNumbers.push(parseInt(numbers[counter]) + parseInt(numbers[counter + 1]));
             counter++;
             newOperations = newOperations.concat(operations.slice(counter));
             newNumbers = newNumbers.concat(numbers.slice(counter + 1));
@@ -91,5 +87,6 @@ function calculate(string) {
     let [numbers, operations] = separateNumbersAndOperators(string);
     [numbers, operations] = processMultiAndDiv(numbers, operations);
     [numbers, operations] = processAddAndSub(numbers, operations);
+    document.getElementById("prev").value=document.getElementById("displayed").value+"=";
     document.getElementById("displayed").value=[...operations, ...numbers];
 }
