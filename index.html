@@ -19,24 +19,24 @@
                     </div>
                     <div class="keys">
                         <input type="button" onClick="displayed.value += '+'" value="+" class="operator line_one" id="plus">
-                        <input type="button" value="-" onClick="displayed.value += '-'" class="operator line_one">
-                        <input type="button" value="*" onClick="displayed.value += '*'" class="operator line_one">
-                        <input type="button" value="/" onClick="displayed.value += '/'" class="operator line_one">
+                        <input type="button" value="-" onClick="displayed.value += '-'" class="operator line_one" id="minus">
+                        <input type="button" value="*" onClick="displayed.value += '*'" class="operator line_one" id="multiply">
+                        <input type="button" value="/" onClick="displayed.value += '/'" class="operator line_one" id="divide">
 
                         <input type="button" value="1" onClick="displayed.value += '1'" class="number" id="one">
-                        <input type="button" value="2" onClick="displayed.value += '2'" class="number">
-                        <input type="button" value="3" onClick="displayed.value += '3'" class="number">
-                        <input type="button" value="4" onClick="displayed.value += '4'" class="number">  
+                        <input type="button" value="2" onClick="displayed.value += '2'" class="number" id="two">
+                        <input type="button" value="3" onClick="displayed.value += '3'" class="number" id="three">
+                        <input type="button" value="4" onClick="displayed.value += '4'" class="number" id="four">   
 
-                        <input type="button" value="5" onClick="displayed.value += '5'" class="number">
-                        <input type="button" value="6" onClick="displayed.value += '6'" class="number">
-                        <input type="button" value="7" onClick="displayed.value += '7'" class="number">
-                        <input type="button" value="8" onClick="displayed.value += '8'" class="number">
+                        <input type="button" value="5" onClick="displayed.value += '5'" class="number" id="five">
+                        <input type="button" value="6" onClick="displayed.value += '6'" class="number" id="six">
+                        <input type="button" value="7" onClick="displayed.value += '7'" class="number" id="seven">
+                        <input type="button" value="8" onClick="displayed.value += '8'" class="number" id="eight">
 
-                        <input type="button" value="9" onClick="displayed.value += '9'" class="number">
-                        <input type="button" value="0" onClick="displayed.value += '0'" class="number">
-                        <input type="button" value="=" class="equal" onClick="calculate(displayed.value)">
-                        <input type="button" value="AC" class="ac" onClick="displayed.value ='';prev.value =''">
+                        <input type="button" value="9" onClick="displayed.value += '9'" class="number" id="nine">
+                        <input type="button" value="0" onClick="displayed.value += '0'" class="number" id="zero">
+                        <input type="button" value="=" class="equal" onClick="calculate(displayed.value)" id="equal">
+                        <input type="button" value="AC" class="ac" onClick="displayed.value ='';prev.value =''" id="ac">
                     </div>
                 </form>
  
