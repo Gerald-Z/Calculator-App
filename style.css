@@ -25,14 +25,14 @@ body {
     height: 50vh;
     margin-top: 10%;
 }
-
+/*
 .keys {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 10px;
 }
+*/
 
 /*
 input[type="button"] {
@@ -46,8 +46,13 @@ input[type="button"] {
 }
 */
 
-input[type="button"] {
+/*
     flex: 1 1 21%;
+
+*/
+
+
+input[type="button"] {
     height: 70px;
     font-family: 'digital-clock-font';
     font-style: italic bold;
@@ -79,20 +84,7 @@ input[type="button"] {
     margin-top: 25px;
 }
 
-.line_one {
-    margin-top: 40px;
-}
 
-.operator, .equal {
-    background-color: rgb(255, 0, 0)
-}
 
-.number {
-    background-color: grey
-}
-
-.ac {
-    background-color: rgb(166, 157, 209);
-}
 
 
