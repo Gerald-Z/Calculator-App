@@ -1,11 +1,11 @@
-Calculator App
+# Calculator App
 
-Description:
+## Description:
 The calculator web app acts like a normal calculator and can perform arithmetic computations for the user. 
 I created the app to practice my skills in HTML, CSS, and JavaScript.
 After completing the app, I did some testing with Selenium WebDriver. 
 
-Some Challenges I encountered:
+## Some Challenges I encountered:
 I encountered a number of interesting issues while working with this app. Initially, I intended on using CSS Flexbox to place the various buttons, 
   but I eventually changed my mind and used CSS Grid instead as it allowed me to have more control over both the horizontal and the vetical layout 
   of the elements. 
@@ -13,7 +13,7 @@ I also encountered a number of issues when I tried to access the app on my mobil
   styles depending on the size of the screen of the user's device, thereby making the app take up almost the entire screen when the app is accessed on mobile 
   devices. 
 
-Plans for the future: 
+## Plans for the future: 
 I may replace the Selenium tests with Cypress ones in the future, as I find Cypress to be a far more efficient testing tool for E2E testing. 
 I may also add more styles to the web app in the future.
 
